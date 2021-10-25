@@ -23,11 +23,15 @@ const biciclette = [
     },
 ]
 const stamp = document.querySelector(`.container`)
+//prendere una bici di riferimento 
+let lightessBike = biciclette[0]
+//ciclare all'interno delle bici 
 for (let i = 0; i < biciclette.length; i++) {
-    const bicicletta = (biciclette[i])
-    console.log(bicicletta);
-    const min = Math.min(bicicletta.peso)
-    stamp.innerHTML = min
-    console.log(min);
+    const bicicletta = biciclette[i]
+
+    if (bicicletta.peso < lightessBike.peso) {
+        lightessBike = bicicletta
+    }
 }
 
+stamp.innerHTML = `la bici più leggera è: ${lightessBike.nome} e pesa: ${lightessBike.peso}`
