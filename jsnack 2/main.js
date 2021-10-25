@@ -40,3 +40,17 @@ const campionato = [
         falliSubiti: 0
     }
 ]
+//generare numeri random al posto delle proprietà punti fatti e falli subiti
+function casuale() {
+    num = Math.round(Math.random() * 100);
+    return num
+}
+casuale()
+//ciclare le squadre
+for (let i = 0; i < campionato.length; i++) {
+    const squadra = campionato[i]
+    squadra.puntiFatti = casuale()
+    console.log(squadra.puntiFatti);
+    squadra.falliSubiti = casuale()
+    console.log(squadra.falliSubiti);
+}
