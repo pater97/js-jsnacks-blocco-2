@@ -22,8 +22,12 @@ const biciclette = [
         peso: 8
     },
 ]
-
+const stamp = document.querySelector(`.container`)
 for (let i = 0; i < biciclette.length; i++) {
-    const bicicletta = biciclette[i]
+    const bicicletta = (biciclette[i])
     console.log(bicicletta);
+    const min = Math.min(bicicletta.peso)
+    stamp.innerHTML = min
+    console.log(min);
 }
+
