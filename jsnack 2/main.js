@@ -50,7 +50,6 @@ casuale()
 for (let i = 0; i < campionato.length; i++) {
     const squadra = campionato[i]
     squadra.puntiFatti = casuale()
-    console.log(squadra.puntiFatti);
     squadra.falliSubiti = casuale()
-    console.log(squadra.falliSubiti);
+    console.log(squadra);
 }
