@@ -53,3 +53,4 @@ for (let i = 0; i < campionato.length; i++) {
     squadra.falliSubiti = casuale()
     console.log(squadra);
 }
+const { squadra, puntiFatti } = campionato
